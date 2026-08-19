@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Helpdesk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IT Helpdesk</h1>
+        <p>Ein kleines Ticket-System für technische Probleme.</p>
+    </header>
+
+    <section>
+        <h2>Neues Ticket erstellen</h2>
+
+        <label for="problem">Problem beschreiben:</label>
+
+        <br><br>
+
+        <textarea id="problem" rows="6" cols="50"></textarea>
+
+        <br><br>
+<label for="prioritaet">Priorität:</label>
+
+<select id="prioritaet">
+    <option value="Niedrig">Niedrig</option>
+    <option value="Mittel" selected>Mittel</option>
+    <option value="Hoch">Hoch</option>
+</select>
+
+<br><br>
+      <button onclick="ticketErstellen()">Ticket erstellen</button>
+      <div id="ticketAusgabe"></div>
+    </section>
+<script src="script.js"></script>
+</body>
+
+</html>

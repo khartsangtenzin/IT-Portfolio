@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Passwort-Generator</h1>
+        <p>Erstellt ein zufälliges Passwort.</p>
+    </header>
+
+    <section>
+        <h2>Neues Passwort erstellen</h2>
+<label for="laenge">Passwortlänge:</label>
+
+<select id="laenge">
+    <option value="8">8 Zeichen</option>
+    <option value="12" selected>12 Zeichen</option>
+    <option value="16">16 Zeichen</option>
+    <option value="20">20 Zeichen</option>
+</select>
+
+<br><br>
+        <button onclick="passwortErstellen()">
+            Passwort generieren
+        </button>
+<button onclick="passwortKopieren()">
+    Passwort kopieren
+</button>
+     <div id="passwortAusgabe" class="passwort-ausgabe">
+    Dein Passwort erscheint hier.
+</div>
+       <br><br>
+
+<a href="index.html" class="projekt-button">
+    ← Zurück zum Portfolio
+</a> 
+    </section>
+
+    <script src="passwort.js"></script>
+
+</body>
+
+</html>
